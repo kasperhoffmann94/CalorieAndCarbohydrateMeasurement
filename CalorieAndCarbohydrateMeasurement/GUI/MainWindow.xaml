@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="150" Width="400">
+    <DockPanel>
+        <StackPanel HorizontalAlignment="Left">
+            <WrapPanel HorizontalAlignment="Center">
+                <Label Name="CaloriePerHundredLabel" HorizontalAlignment="Left">Kalorier pr. 100 gram</Label>
+            </WrapPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Label Name="GramLabel" HorizontalAlignment="Left">Antal gram</Label>
+            </WrapPanel>
+        </StackPanel>
+        <StackPanel>
+            <WrapPanel>
+                <TextBox Name="CaloriePerHundredTextbox" VerticalAlignment="Center" Width="100">Angiv Kalorier her</TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBox Name="GramTextbox" VerticalAlignment="Center" Width="100">Angiv gram her</TextBox>
+            </WrapPanel>
+            <Button Name="CalculateButton">Beregn</Button>
+            <WrapPanel>
+                <Label Name="ThereIsLabel">Der er: </Label>
+                <Label Name="CalculatedAmountLabel"></Label>
+                <Label Name="CaloriesLabel">Kalorier i det indtastede</Label>
+            </WrapPanel>
+        </StackPanel>
+        <StackPanel></StackPanel>
+    </DockPanel>
 </Window>
